@@ -19,7 +19,7 @@ Upon opening **GTA V Modlib.exe** up, you'll b met with this UI resembling the R
 ![GTA V Modlib Home Screen Screenshot](./res/public/GTA_V_Modlib_Home.png)
 In the bottom left you'll be prompted to download mods from [gta5-mods.com](https://gta5-mods.com) and install them in GTA V Modlib
 
-In the middle, you'll see two buttons: Launch Modded & Launch Vanilla. It's as easy as clicking one of those two buttons to switch between modded and vanilla GTA V in a matter of seconds[$^1$](#disclaimers)
+In the middle, you'll see two buttons: Launch Modded & Launch Vanilla. It's as easy as clicking one of those two buttons to switch between modded and vanilla GTA V in a matter of seconds<sup>[1](#disclaimers)</sup>
 
 In the left panel you can also switch mods on and off individually.
 
