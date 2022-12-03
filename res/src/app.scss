@@ -1,0 +1,37 @@
+.launch-button {
+    @apply w-60;
+    @apply h-16;
+    @apply rounded-md;
+    @apply text-lg;
+    @apply font-black;
+    overflow: hidden;
+    color: black;
+    position: relative;
+    outline: 2px solid black;
+    outline-offset: -5px;
+    background-color: transparent;
+    &:hover::after {
+        opacity: 0;
+    }
+    &::before {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-color: #fcaf17;
+        z-index: -2;
+    }
+    &::after {
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background-image: linear-gradient(to top, #c3c3c3, white);;
+        z-index: -1;
+        transition: opacity 0.33s;
+    }
+}

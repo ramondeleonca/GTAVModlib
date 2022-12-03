@@ -1,0 +1,17 @@
+{
+  "name": "gta-v-modlib",
+  "displayName": "GTA V Modlib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.py",
+  "scripts": {
+    "dev": "concurrently \"py -3.8 main.py\" \"cd res && npm start\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "wait-on": "^6.0.1"
+  }
+}
