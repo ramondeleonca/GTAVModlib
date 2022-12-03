@@ -5,7 +5,8 @@
   "description": "",
   "main": "main.py",
   "scripts": {
-    "dev": "concurrently \"py -3.8 main.py\" \"cd res && npm start\""
+    "dev": "concurrently \"py -3.8 main.py\" \"cd res && npm start\"",
+    "build": "./build.bat"
   },
   "keywords": [],
   "author": "",

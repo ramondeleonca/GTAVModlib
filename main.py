@@ -6,20 +6,28 @@ import json
 import configparser
 import webbrowser
 import subprocess
+import pathlib
 import sys
 from dotenv import load_dotenv
 
-load_dotenv()
 FROZEN = getattr(sys, 'frozen', False) and hasattr(sys, '_MEIPASS')
+
+def get_path(path: os.PathLike) -> os.PathLike:
+    if not FROZEN:
+        return path
+    else:
+        return pathlib.Path(__file__).parent.joinpath(path)
+
+load_dotenv()
 IS_DEV = os.getenv("IS_DEV", "false") == "true" and not FROZEN
 DEBUG = os.getenv("DEBUG", "false") == "true" and not FROZEN
 COMPUTER_NAME = platform.node()
-URL = "res/build/index.html" if not IS_DEV else "http://localhost:3000"
+URL = get_path("./res/build/index.html") if not IS_DEV else "http://localhost:3000"
 MANIFEST = None
 CONFIG = configparser.RawConfigParser()
-CONFIG.read("conf/main.ini")
+CONFIG.read(get_path("./conf/main.ini"))
 
-with open("res/build/manifest.json", "r") as manifest_json:
+with open(get_path("./res/build/manifest.json"), "r") as manifest_json:
     MANIFEST = json.loads(manifest_json.read())
     manifest_json.close()
 

@@ -13,4 +13,4 @@ main.py ^
 --add-data="package.json;." ^
 --add-data="./conf;conf" ^
 --icon "./res/public/favicon.ico" ^
---uac-admin ^
+--uac-admin
