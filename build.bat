@@ -10,6 +10,8 @@ main.py ^
 --noconsole ^
 --name "GTA V Modlib" ^
 --add-data="./res/build;res/build" ^
+--add-data="./res/public;res/public" ^
+--add-data="./internal;internal" ^
 --add-data="package.json;." ^
 --add-data="./conf;conf" ^
 --icon "./res/public/favicon.ico" ^

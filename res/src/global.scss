@@ -3,9 +3,36 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+    background-color: transparent;
     color: white;
     margin: 0;
+}
+
+.disabled {
+    filter: brightness(1.25) contrast(0.5);
+    cursor: not-allowed;
+    &:active {
+        pointer-events: none;
+    }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #ffffffdd transparent;
+}
+
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ffffffdd;
+    border-radius: 1000px;
+    border: 0px none #ffffffdd;
 }
 
 a {

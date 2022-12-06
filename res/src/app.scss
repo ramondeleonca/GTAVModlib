@@ -1,6 +1,4 @@
-.launch-button {
-    @apply w-60;
-    @apply h-16;
+.themed-button {
     @apply rounded-md;
     @apply text-lg;
     @apply font-black;
@@ -10,7 +8,8 @@
     outline: 2px solid black;
     outline-offset: -5px;
     background-color: transparent;
-    &:hover::after {
+    text-transform: uppercase;
+    &:not(.disabled):hover:after {
         opacity: 0;
     }
     &::before {
@@ -33,5 +32,12 @@
         background-image: linear-gradient(to top, #c3c3c3, white);;
         z-index: -1;
         transition: opacity 0.33s;
+    }
+}
+
+.screen {
+    transition: transform 0.15s ease-out;
+    &.-hidden {
+        transform: translateY(-100%);
     }
 }

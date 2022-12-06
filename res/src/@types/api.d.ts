@@ -13,5 +13,10 @@ export interface pywebview {
 declare global {
     interface Window {
         pywebview: pywebview;
+        [customProps: string]: any;
+    }
+    
+    interface WindowEventMap {
+        "pywebviewready": Event;
     }
 }

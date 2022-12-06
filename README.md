@@ -10,6 +10,7 @@
 ![Version](https://img.shields.io/github/package-json/v/ramondeleonca/GTAVModlib?style=for-the-badge)
 
 #### THIS IS A WORK-IN-PROGRESS!
+#### Currently only supports Epic games Version
 
 # GTA V Modlib
 GTA V Modlib is a program that allows you to import, install and manage your GTA V mods all while being lightweight and easy to use.
@@ -27,6 +28,39 @@ In the left panel you can also switch mods on and off individually.
 GTA V Modlib is built with **TypeScript** and **Python**: TypeScript is used in conjunction with **React** to create the front-end render build and python is used to put everything inside a nice window with **pywebview** and interfafce with the system with **easygui** and native Python APIs.
 
 If you have knowledge in **React**, **Typescript** or **Python** feel free to modify and submit a pull request, help is always welcome!
+
+## Building and Development Server
+Before building make sure you have both installed:
+- Python 3.8.0
+- Node JS v18 or later
+
+Then, in the **root folder** run 
+
+```sh
+npm i
+```
+To install the dev dependencies; afer, navigate to the **res folder** and run
+
+```sh
+npm i
+```
+Once again to install the dependencies for the render process, lastly, in the **root folder** run 
+```sh
+py -3.8 -m pip install -r requirements.txt
+```
+To install Python's requirements.
+
+To start the development server, in the root folder run 
+```sh
+npm run dev
+```
+It will start the react dev server and run the app with the dev server URL.
+
+To build the app run 
+```sh
+npm run build
+```
+And your built exe file will be in the **dist folder**
 
 #### Disclaimers
 1. Depending on the speed of your storage device

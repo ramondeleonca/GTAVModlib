@@ -1,0 +1,15 @@
+{
+    "$format": {
+        "<display name>": "<file location>"
+    },
+    "ASI Loader": "dinput8.dll",
+    "Open Camera V": "openCameraV.asi",
+    "OpenIV": "OpenIV.asi",
+    "Mods Folder": "mods",
+    "ENB Series d3d11.dll": "d3d11.dll",
+    "ENB Series d3dcompiler_46e.dll": "d3dcompiler_46e.dll",
+    "ENB Series ENBLocal": "enblocal.ini",
+    "ENB Series INI": "enbseries.ini",
+    "ENB Series Folder": "enbseries",
+    "ENB Series Shader Input": "shaderinput"
+}

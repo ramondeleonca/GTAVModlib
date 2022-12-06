@@ -1,0 +1,31 @@
+{
+    "config": {
+        "appStorage": "%appdata%/../Local/Modlib/GTA V",
+        "pseudoGameFolder": "%appdata%/../Local/Modlib/GTA V/Pseudo Game Folder",
+        "downloads": "%appdata%/../Local/Modlib/GTA V/Downloads",
+        "temp": "%appdata%/../Local/Modlib/GTA V/Downloads/Temp",
+        "gtavpath": "epic"
+    },
+    "gtav": {
+        "paths": {
+            "": "GTA Path for every launcher",
+            "epic": "C:\\Program Files\\Epic Games\\GTAV",
+            "rockstar": "C:\\Program Files\\Rockstar Games\\Grand Theft Auto V",
+            "steam": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Grand Theft Auto V",
+            "custon": null
+        },
+        "launcher": {
+            "path": "C:\\Program Files\\Rockstar Games\\Launcher",
+            "filename": "LauncherPatcher.exe"
+        }
+    },
+    "openIV": {
+        "url": "https://openiv.com/WebIV/guest.php?get=1",
+        "path": "%appdata%\\..\\Local\\New Technology Studio\\Apps\\OpenIV",
+        "filename": "OpenIV.exe",
+        "gtavId": "Five"
+    },
+    "scriptHookV": {
+        "url": "http://www.dev-c.com/files/ScriptHookV_1.0.2699.16.zip"
+    }
+}
